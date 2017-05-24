@@ -1,2 +1,3 @@
 # ubidiscordbot.github.io
-The wonderful UBI website
+
+The official website for the DISCORD bot Ubi.
