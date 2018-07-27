@@ -27,78 +27,137 @@ const channelData = [{
     selected: true,
     messages: [{
         type: 'input',
-        text: "But, why should I use Ubi?",
-        delay: 250,
+        text: ".weather Orlando, FL",
+        delay: 350,
         user: users.ZNTH
-    },{
-        type: 'message',
-        delay: 700,
-        user: users.Ubi,
-        text: "For starters, I use modules."
-    },{
-        type: 'input',
-        text: "Modules?",
-        delay: 1000,
-        user: users.ZNTH
-    },{
-        type: 'message',
-        text: ".play trap nation",
-        delay: 500,
-        user: users.enclo
     },{
             type: 'message',
             delay: 350,
             user: users.Ubi,
-            text: '[emoji id="1f5d2"] Queued: Trap Nation: 2018 Best Trap Music',
+            text: '',
             embedData: {
-                title: '-=-=-=-=-= Music =-=-=-=-=-',
+                title: 'Weather for Orlando, FL',
+                pill: 'hsl(50, 75%, 68%)',
+                thumb: 'https://images.vexels.com/media/users/3/145136/isolated/preview/94a70b169da2d2f32dc34ead9122ef2d-sun-sharp-rays-big-icon-by-vexels.png',
+                fields: [{
+                    name: '',
+                    value: '87°F / 31°C'
+                }, {
+                    name: 'Mostly Sunny throughout the day',
+                    value: '15% Chance of precipitation'
+                }, {
+                    name: 'Low 93°F / Hi 77°F',
+                    value: '7 mph / 11kph'
+                }]
+            }},{
+        type: 'message',
+        text: ".calc 9*7+(5+5^2)",
+        delay: 2200,
+        user: users.enclo
+    },{
+        type: 'message',
+        delay: 700,
+        user: users.Ubi,
+        text: "The answer is 93."
+    },{
+            type: 'input',
+            text: '.play sad machine',
+            delay: 2000,
+            user: users.ZNTH
+        }, {
+            type: 'message',
+            delay: 700,
+            user: users.Ubi,
+            text: '[emoji id="1f5d2"] Queued: Porter Robinson - Sad Machine (Lyric Video)',
+            embedData: {
+                title: '',
                 pill: 'hsl(202, 35%, 68%)',
-                thumb: 'https://images-ext-2.discordapp.net/external/Zdj-EIYZixh-NSFIQrmwLq6wn8RjzwEk4Hebb--Mryk/https/i.ytimg.com/vi/KOgvA98FifU/hqdefault.jpg?width=80&height=60',
+                thumb: 'https://img.youtube.com/vi/HAIDqt2aUek/0.jpg',
                 fields: [{
                     name: 'Now Streaming',
-                    value: 'Trap Nation: 2018 Best Trap Music'
-                }, {
-                    name: 'Duration',
-                    value: '02:26:33'
-                }, {
+                    value: 'Porter Robinson - Sad Machine (Lyric Video)'
+                },{
                     name: 'Channel',
                     value: 'Uploaded by [strong text="Trap Nation"]'
+                },{
+                    name: 'Duration',
+                    value: '00:04:19'
                 }],
-                footerIcon: users.ZNTH.avatar,
+                footerIcon: users.enclo.avatar,
                 footer: `Requested By ${users.ZNTH.username}`
+            }
+        },{
+            type: 'input',
+            text: '.git ubidiscordbot',
+            delay: 3000,
+            user: users.ZNTH
+        },{
+            type: 'message',
+            text: "hang on, I'll install the git module",
+            delay: 1500,
+            user: users.enclo
+        },{
+            type: 'message',
+            delay: 2500,
+            user: users.Ubi,
+            text: '',
+            embedData: {
+                title: 'Ubi Configuration',
+                pill: 'hsl(350, 95%, 68%)',
+                thumb: '',
+                fields: [{
+                    name: 'Module Installed!',
+                    value: 'GitHub Updates by [strong text="@mooshoe"]'
+                }],
+                footerIcon: users.enclo.avatar,
+                footer: `Module installed by ${users.enclo.username}`
+            }
+        },{
+        type: 'input',
+        text: ".git ubidiscordbot",
+        delay: 2750,
+        user: users.ZNTH
+    },{
+            type: 'message',
+            delay: 700,
+            user: users.Ubi,
+            text: '',
+            embedData: {
+                title: 'in /ubi-rewrite',
+                pill: 'hsl(202, 75%, 68%)',
+                fields: [{
+                    name: "@encloinc updated 3 files in /lib/",
+                    value: 'I added a help command, and sub-help commands for the other modules'
+                }, {
+                    name: '@xznth updated 1 file /logos/',
+                    value: 'Fixed icon 3 centering issue'
+                },]
             }},{
-        type: 'input',
-        text: "Since when can you play music?",
-        delay: 2500,
-        user: users.ZNTH
+            type: 'message',
+            delay: 0,
+            user: users.Ubi,
+            text: '',
+            embedData: {
+                title: 'in /ubidiscordbot.github.io',
+                pill: 'hsl(202, 75%, 68%)',
+                fields: [{
+                    name: '@xznth updated 7 files in master',
+                    value: 'Website is up and running!'
+                },]
+            }},{
+        type: 'message',
+        text: ".user id ZNTH",
+        delay: 4200,
+        user: users.enclo
     },{
         type: 'message',
         delay: 700,
         user: users.Ubi,
-        text: "Since enclo installed the music module."
-},{
-        type: 'input',
-        text: "Oh, what other modules do you have?",
-        delay: 2500,
-        user: users.ZNTH
-    },{
-        type: 'message',
-        delay: 700,
-        user: users.Ubi,
-        text: "None right now, but there are plenty to be installed. Check the modules tab on my website!"
-},{
-        type: 'input',
-        text: "Looks like anyone can upload a module, isn't that dangerous?",
-        delay: 2500,
-        user: users.ZNTH
-    },{
-        type: 'message',
-        delay: 700,
-        user: users.Ubi,
-        text: "No, I have several measures against malicious code, and the Ubi developers carefuly review every module before approving them."
-}
-               ]}, {
-    name: 'music', // Just in case that other guy wants 2 channels, you can click music when the convo is done
+        text: "267747133929684992"
+    }
+              
+              ]}, {
+    name: 'music',
     messages: [{
             type: 'input',
             text: '.play trap nation',
